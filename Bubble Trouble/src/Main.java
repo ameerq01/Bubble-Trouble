@@ -11,8 +11,8 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-//Declaring BubbleTroubleGame class with JPanel and implementing action, mouse and key listeners
-public class BubbleTroubleGame extends JPanel implements KeyListener, ActionListener, MouseListener {
+//Declaring Main class with JPanel and implementing action, mouse and key listeners
+public class Main extends JPanel implements KeyListener, ActionListener, MouseListener {
 	//Declaring class variables
 	Player alien;
 	Arrow arro;
@@ -30,10 +30,10 @@ public class BubbleTroubleGame extends JPanel implements KeyListener, ActionList
 	//Declaring array of balls
 	Ball[] b;
 	public static void main(String[] args) {		
-		new BubbleTroubleGame();
+		new Main();
 	}
 
-	public BubbleTroubleGame(){		
+	public Main(){		
 		//Initializing boolean variables
 		split = false;
 		game = false;
